@@ -4,7 +4,16 @@ body {
 h1 {
     color: chartreuse;
 }
+h2 {
+    color: whitesmoke;
+}
 
 p {
     color:chartreuse
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
 }
