@@ -17,3 +17,14 @@ p {
     max-width: 800px;
     margin: auto;
 }
+div#navbar {
+    color: chartreuse;
+}
+div#navbar a, a:visited {
+    color: chartreuse;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+div#navbar a:hover {
+  text-decoration: underline;
+}
