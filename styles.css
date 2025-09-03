@@ -1,27 +1,53 @@
+header {
+  width: 100%;
+  border-bottom: solid whitesmoke;
+  padding: 0px 0 5px 0px;
+  margin: 0 0 50px 0;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
 body {
-    background-color: black;
+    background-color: rgb(2, 40, 36);
+    font: 16px;
 }
 h1 {
-    color: chartreuse;
+    color: rgb(162, 163, 161);
+    font-size: x-large;
 }
 h2 {
     color: whitesmoke;
+    font-size: large;
 }
 
+h3 {
+    color: whitesmoke;
+    font-size: large;
+}
 p {
-    color:chartreuse
+    color:whitesmoke;
+    font-size: medium;
 }
-
+blockquote, cite, ul {
+    color:whitesmoke;
+    font-size: medium;
+}
 .container {
     width: 90%;
     max-width: 800px;
     margin: auto;
 }
 div#navbar {
-    color: chartreuse;
+    color: rgb(230, 233, 227);
 }
 div#navbar a, a:visited {
-    color: chartreuse;
+    color: rgb(230, 233, 227);
     text-decoration: none;
     text-decoration-line: none;
 }
