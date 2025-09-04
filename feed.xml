@@ -1,8 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+
 <rss version="2.0">
-<update>
+<channel>
+<title>The Compile-inn</title>
+<link>https://compile-inn.github.io/billets.html</link>
+<description>When nothing is compiling, you know you can always meet your friends at the Compile-Inn.</description>
+<item>
     <date>3 september 2025</date>
-    <category>Quotes</category>
-    <content>I just made a non exhaustive list of the latin phrases I like. Of course, I don't use them all.</content>
-    <link><a href="https://compile-inn.github.io/quotes.html#latin_phrases">Dura lex, sed lex. So, take a look!</a></link>
-</update>
+    <title>Latin phrases added!</title>
+    <link>https://compile-inn.github.io/quotes.html#latin_phrases</link>
+    <description>I just made a non exhaustive list of the latin phrases I like. Of course, I don't use them all.</description>
+</item>
+</channel>
 </rss>
