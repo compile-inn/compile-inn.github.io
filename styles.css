@@ -15,7 +15,7 @@ header h2 {
 
 body {
     background-color: rgb(2, 40, 36);
-    font: 16px;
+    font: 18px;
 }
 h1 {
     color: rgb(162, 163, 161);
@@ -23,20 +23,20 @@ h1 {
 }
 h2 {
     color: whitesmoke;
-    font-size: large;
+    font-size: 24px;
 }
 
 h3 {
     color: whitesmoke;
-    font-size: large;
+    font-size: 22px;
 }
 p {
     color:whitesmoke;
-    font-size: medium;
+    font-size: 18px;
 }
 blockquote, cite, ul {
     color:whitesmoke;
-    font-size: medium;
+    font-size: 18px;
 }
 .container {
     width: 90%;
@@ -46,11 +46,12 @@ blockquote, cite, ul {
 div#navbar {
     color: rgb(230, 233, 227);
 }
-div#navbar a, a:visited {
+div#navbar a, a, a:visited {
     color: rgb(230, 233, 227);
     text-decoration: none;
     text-decoration-line: none;
 }
-div#navbar a:hover {
+
+div#navbar a:hover, a:hover {
   text-decoration: underline;
 }
