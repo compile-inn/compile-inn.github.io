@@ -12,6 +12,9 @@ header h1 {
 header h2 {
     font-size: 24px;
 }
+header {
+    font-size: 18px;
+}
 
 body {
     background-color: rgb(2, 40, 36);
@@ -30,7 +33,7 @@ h3 {
     color: whitesmoke;
     font-size: 22px;
 }
-p {
+p, pre {
     color:whitesmoke;
     font-size: 18px;
 }
