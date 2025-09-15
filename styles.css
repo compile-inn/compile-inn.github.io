@@ -1,7 +1,7 @@
 header {
   width: 100%;
   text-align: center;
-  border-bottom: solid whitesmoke;
+  border-bottom: solid aliceblue;
   padding: 0px 0 5px 0px;
   margin: 0 0 50px 0;
 }
@@ -22,6 +22,7 @@ body {
     /* background-color: rgb(39, 26, 23); 
     /* background-color: rgb(2, 40, 36); */
     background-color: midnightblue;
+    color: aliceblue;
     text-align: justify;
     font: 16px;
     font-family: sans-serif;
@@ -34,27 +35,23 @@ h1 {
 }
 
 h2 {
-    color: whitesmoke;
     font-size: 24px;
 }
 
 h3 {
-    color: whitesmoke;
+    color: aliceblue;
     font-size: 22px;
 }
 
 p {
-    color:snow;
     font-size: 16px;
 }
 
 pre {
-    color:whitesmoke;
-    font-size: 1.2vw;
+    font-size: 1.15vw;
 }
 
 blockquote, cite, ul {
-    color:whitesmoke;
     font-size: 16px;
 }
 
@@ -71,10 +68,10 @@ blockquote, cite, ul {
 }
 
 div#navbar {
-    color: rgb(230, 233, 227);
+    color: aliceblue;
 }
 div#navbar a, a, a:visited {
-    color: rgb(230, 233, 227);
+    color: aliceblue;
     text-decoration: none;
     text-decoration-line: none;
 }
