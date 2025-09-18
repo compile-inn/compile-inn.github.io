@@ -60,6 +60,13 @@ blockquote, cite, ul {
     max-width: 800px;
     margin: auto;
 }
+.ascii-art {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    line-height: normal;
+    font-family: monospace;
+}
 
 div#navbar {
     color: aliceblue;
