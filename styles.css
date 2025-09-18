@@ -48,7 +48,7 @@ p {
 }
 
 pre {
-    font-size: 1.15vw;
+    font-size: 1.2vw;
 }
 
 blockquote, cite, ul {
@@ -61,7 +61,7 @@ blockquote, cite, ul {
     margin: auto;
 }
 .ascii-art {
-    width: 90%;
+    width: 60%;
     max-width: 800px;
     margin: auto;
     line-height: normal;
