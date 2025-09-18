@@ -61,12 +61,6 @@ blockquote, cite, ul {
     margin: auto;
 }
 
-.ascii_art {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-}
-
 div#navbar {
     color: aliceblue;
 }
