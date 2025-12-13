@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compile-Inn > Poolish Bread</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="navbar" class="container">
+          ▒
+          <a href="../index.html">Home</a>
+          / Poolish Bread
+        </div>
+    </header>
+
+    <div class=container> 
+        <h1>Poolish Bread Dough Calculator</h1>
+        <input id="flourQty" type="number" placeholder="flour in grams">
+        <button type="button" onclick="getRecipePoolish()">Calculate!</button>
+        <p>
+            <table class="recipe_table">
+                <tr>
+                    <th>Ing</th>
+                    <th>Quantity Day 1</th>
+                    <th>Quantity Day 2</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td><span id ="flourDay1"></span></td>
+                    <td><span id ="flourDay2"></span></td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td><span id ="waterDay1"></span></td>
+                    <td><span id ="waterDay2"></span></td>
+
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td></td>
+                    <td><span id ="salt"></span></td>
+                </tr>
+                <tr>
+                    <td>Dry yeast</td>
+                    <td><span id ="yeastDay1"></span></td>
+                    <td><span id ="yeastDay2"></span></td>
+                </tr>
+            </table>
+        </p>
+        </div>
+    <script src ="poolish.js"></script>
+</body>

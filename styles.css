@@ -35,9 +35,18 @@ table, th, td, tr {
     padding: 3px;
 }
 
+.recipe_table, tr, th, td {
+            border: 1px solid aliceblue;
+            border-collapse: collapse;
+            padding: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+}
+
 h1 {
     color: rgb(162, 163, 161);
-    font-size: x-large;
+    font-size: 26px;
 }
 
 h2 {
