@@ -1,10 +1,11 @@
 // use it to get the chuncks of the main text
 async function getCorpus(json_file) {
     let file = await fetch(json_file);
-    let corpusText = JSON.parse(corpus);
+    let json_str = JSON.stringify(file);
+    let corpusText = JSON.parse(json_str);
     let array_len = corpusText.length;
     let index = Math.floor(Math.random() * array_len);
     let hearsay = corpusText[index];
-    
+
     document.getElementById("hearsayTest").innerHTML = hearsay;
 }
