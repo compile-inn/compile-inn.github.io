@@ -1,4 +1,4 @@
-// This files calcules quantities for bread using yeast directly.
+// This files calculates quantities for bread using yeast directly.
 
 // const values are set by gram.
 const hydrometry = 0.7;
