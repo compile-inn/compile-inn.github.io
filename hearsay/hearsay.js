@@ -28,20 +28,21 @@ async function getCorpus(jsonFile) {
     return corpusArray;
 }
 
-function getHearsay(corpusArray) {
+function makeHearsay(corpusArray) {
     const arrayLen = corpusArray.length;
     let index = Math.floor(Math.random() * arrayLen);
     let hearsay = corpusArray[index];
     return hearsay;
 }
 
-function displayHearsay(promiseResult) {
-    document.getElementById("hearsayTest").innerHTML = promiseResult;
-}
-
-getCorpus(json_file).then(
-  function(value) {displayHearsay(getHearsay(value));},
+function displayHearsay(jsonFile) {
+  getCorpus(jsonFile).then(
+  function(value) {
+            let hearsay = makeHearsay(value);
+            document.getElementById("hearsayTest").innerHTML = hearsay;
+  },
   function(error) {
             console.error('Error fetching corpus:', error);
             document.getElementById("hearsayTest").innerHTML = "Error loading text";}
 );
+}
