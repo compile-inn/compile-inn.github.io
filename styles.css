@@ -83,7 +83,7 @@ blockquote, cite, ul {
     font-family: monospace;
 }
 .ascii-art-wiz {
-    font-size: x-large;
+    font-size: 2em;
     margin: auto;
     line-height: normal;
     font-family: monospace;
