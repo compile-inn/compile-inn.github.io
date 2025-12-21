@@ -86,7 +86,7 @@ blockquote, cite, ul {
     max-width: 800px;
     margin: auto;
     line-height: auto;
-    font-size: x-large;
+    font-size: normal;
     font-family: monospace;
 }
 
