@@ -85,10 +85,10 @@ blockquote, cite, ul {
 .ascii-art-wiz {
     width: 60%;
     max-width: 800px;
-    max-height: 300px;
+    max-height: 200px;
     margin: auto;
-    line-height: auto;
-    font-size: x-large;
+    line-height: normal;
+    font-size: normal;
     font-family: monospace;
 }
 
