@@ -10,7 +10,7 @@ function makeHearsay(corpusArray) {
     let hearsayLen = 4;
     let separator = " ";
     let hearsay = "";
-    for (let i = 0; i <= hearsayLen; i++) {
+    for (let i = 1; i <= hearsayLen; i++) {
         let index = Math.floor(Math.random() * arrayLen);
         hearsay += corpusArray[index] + separator;
     }
