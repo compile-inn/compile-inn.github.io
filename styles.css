@@ -82,6 +82,13 @@ blockquote, cite, ul {
     line-height: normal;
     font-family: monospace;
 }
+.ascii-art-wiz {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    line-height: normal;
+    font-family: monospace;
+}
 
 div#navbar {
     color: aliceblue;
