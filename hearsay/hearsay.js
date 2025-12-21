@@ -12,7 +12,7 @@ function makeHearsay(corpusArray) {
     let hearsay = "";
     for (let i = 0; i <= hearsayLen; i++) {
         let index = Math.floor(Math.random() * arrayLen);
-        hearsay = corpusArray[index] + separator;
+        hearsay += corpusArray[index] + separator;
     }
     return hearsay.trim(); // only works if separator is whitespace
 }
