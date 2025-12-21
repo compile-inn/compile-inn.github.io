@@ -1,27 +1,3 @@
-// use it to get the chuncks of the main text
-/*
-
-async function getCorpus(json_file) {
-
-    let file_promise = await fetch(json_file);
-    let corpusText = await file_promise.json();
-    let array_len = corpusText.length;
-    let index = Math.floor(Math.random() * array_len);
-    let hearsay = corpusText[index];
-
-    document.getElementById("hearsayTest").innerHTML = hearsay;
-}
-*/
-/*
-function handleGetCorpus(json_file) {
-    getCorpus(json_file)
-        .catch(error => {
-            console.error('Error fetching corpus:', error);
-            document.getElementById("hearsayTest").innerHTML = "Error loading text";
-        });
-}
-*/
-
 async function getCorpus(jsonFile) {
     const corpusJSON = await fetch(jsonFile);
     const corpusArray = await corpusJSON.json();
@@ -29,10 +5,16 @@ async function getCorpus(jsonFile) {
 }
 
 function makeHearsay(corpusArray) {
+    // add further settings option later
     const arrayLen = corpusArray.length;
-    let index = Math.floor(Math.random() * arrayLen);
-    let hearsay = corpusArray[index];
-    return hearsay;
+    let hearsayLen = 4;
+    let separator = " ";
+    let hearsay = "";
+    for (let i = 0; i <= hearsayLen; i++) {
+        let index = Math.floor(Math.random() * arrayLen);
+        hearsay = corpusArray[index] + separator;
+    }
+    return hearsay.trim(); // only works if separator is whitespace
 }
 
 function displayHearsay(jsonFile) {
