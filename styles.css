@@ -85,7 +85,7 @@ blockquote, cite, ul {
 .ascii-art-wiz {
     width: 60%;
     max-width: 800px;
-    font-size: large;
+    font-size: 10vw;
     margin: auto;
     line-height: normal;
     font-family: monospace;
