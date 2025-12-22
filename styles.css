@@ -93,7 +93,7 @@ blockquote, cite, ul {
 @media screen and (max-width: 768px) {
     .ascii-art-wiz {
         width: 90%; /* Increase width on smaller screens */
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 }
 
