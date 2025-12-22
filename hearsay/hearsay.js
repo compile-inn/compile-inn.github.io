@@ -9,7 +9,7 @@ function makeHearsay(corpusArray) {
     const arrayLen = corpusArray.length;
     // let hearsayLen = 4;
     let hearsayLen = document.getElementById("hearsayLenUser").value;
-    let separator = document.getElementById("separatorUser").value;;;
+    let separator = document.getElementById("separatorUser").value;
     let hearsay = "";
     for (let i = 1; i <= hearsayLen; i++) {
         let index = Math.floor(Math.random() * arrayLen);
