@@ -90,6 +90,13 @@ blockquote, cite, ul {
     font-family: monospace;
 }
 
+@media screen and (max-width: 768px) {
+    .ascii-art-wiz {
+        width: 90%; /* Increase width on smaller screens */
+        font-size: 1.2em;
+    }
+}
+
 div#navbar {
     color: aliceblue;
 }
