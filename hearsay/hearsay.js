@@ -15,7 +15,7 @@ function makeHearsay(corpusArray) {
         let index = Math.floor(Math.random() * arrayLen);
         hearsay += corpusArray[index] + separator;
     }
-    return hearsay.trim(); // only works if separator is whitespace
+    return hearsay.substring(0, hearsayLen - 1); // removes hanging separator at the end of the string
 }
 
 function displayHearsay(jsonFile) {
