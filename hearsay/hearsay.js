@@ -7,7 +7,8 @@ async function getCorpus(jsonFile) {
 function makeHearsay(corpusArray) {
     // add further settings option later
     const arrayLen = corpusArray.length;
-    let hearsayLen = 4;
+    // let hearsayLen = 4;
+    let hearsayLen = document.getElementById("hearsayLenUser").value;;
     let separator = " ";
     let hearsay = "";
     for (let i = 1; i <= hearsayLen; i++) {
