@@ -15,7 +15,7 @@ function makeHearsay(corpusArray) {
         let index = Math.floor(Math.random() * arrayLen);
         hearsay += corpusArray[index] + separator;
     }
-    const hearsayCutPoint = hearsay.length() - 1;
+    const hearsayCutPoint = hearsay.length - 1;
     return hearsay.substring(0, hearsayCutPoint); // removes hanging separator at the end of the string
 }
 
