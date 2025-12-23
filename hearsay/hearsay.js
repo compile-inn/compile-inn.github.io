@@ -11,13 +11,11 @@ function getIndex(corpusArray) {
 }
 
 function makeHearsay(corpusArray) {
-    // add further settings option later
-    const arrayLen = corpusArray.length;
     let hearsayLen = document.getElementById("hearsayLenUser").value;
     let separator = document.getElementById("separatorUser").value;
     let hearsay = "";
     for (let i = 1; i <= hearsayLen; i++) {
-        let index = Math.floor(Math.random() * arrayLen);
+        let index = getIndex(corpusArray);
         hearsay += corpusArray[index] + separator;
     }
     const hearsayCutPoint = hearsay.length - 1;
