@@ -51,3 +51,16 @@ function displayLine(jsonFile) {
             document.getElementById("wizardQuote").innerHTML = "Error loading text";}
 );
 }
+
+let showStatus = 0;
+function showSettings() {
+    if (showStatus == 0) {
+        showStatus = 1
+        document.getElementById("hearsayLenUser").style.display = "inline-block";
+        document.getElementById("separatorUser").style.display = "inline-block";
+    } else {
+        showStatus = 0;
+        document.getElementById("hearsayLenUser").style.display = "none";
+        document.getElementById("separatorUser").style.display = "none";
+    };
+}

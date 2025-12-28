@@ -75,6 +75,13 @@ blockquote, cite, ul {
     max-width: 800px;
     margin: auto;
 }
+.container-buttons {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
 .ascii-art {
     width: 60%;
     max-width: 800px;
@@ -88,6 +95,7 @@ blockquote, cite, ul {
     margin: auto;
     line-height: normal;
     font-family: monospace;
+    text-align: center;
 }
 
 div#navbar {

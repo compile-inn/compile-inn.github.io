@@ -15,25 +15,11 @@
           / Hearsay wizard
         </div>
     </header>
-    <div class="container">
-        <button type="button" onclick="displayHearsay('myCorpus.json')">Get Hearsay!</button>
-        <input id="hearsayLenUser" type="number" placeholder="number of words" value="4"><br>
-
-        <label for="separator">Separator:</label>
-        <select name="separatorUser" id="separatorUser" value=" ">
-        <option value=" ">whitespace</option>
-        <option value="-">hyphen</option>
-        <option value="_">underbar</option>
-        <option value=".">dot</option>
-        </select>
-
-        <p><button type="button" onclick="displayLine('bibleVerses.json')">Get</button></p>
-    </div>
+    
     <div class="ascii-art-wiz">
     <pre>
-█████████████████████████████████████████████████████████████
   THE HEARSAY WIZARD                                        
-█████████████████████████████████████████████████████████████
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
                                                             
                                               _,-'|         
                                            ,-'._  |         
@@ -55,10 +41,25 @@
                                   ||       |___,,--")_\\    
                                   ||         |_|   ccc/     
                                   ||        ccc/            
-█████████████████████████████████████████████████████████████
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
     </pre>
     <p id="wizardQuote"></p>
-    <p>█████████████████████████████████████████████████████████████</p>
+    </div>
+    <div class="container-buttons">
+        <p>
+        <button type="button" onclick="displayHearsay('myCorpus.json')">Listen hearsay</button>
+        <button type="button" onclick="displayLine('bibleVerses.json')">Read book</button>
+        <button type="button" onclick="showSettings()">Settings</button><br>
+        </p>
+        <!-- <label for="separator" style="display: none;" >Word number:</label> -->     
+        <input id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
+        <!-- <label for="separator" style="display: none;" >Separator:</label> -->
+        <select name="separatorUser" id="separatorUser" style="display: none;" value=" " placeholder="separator">
+        <option value=" ">whitespace</option>
+        <option value="-">hyphen</option>
+        <option value="_">underbar</option>
+        <option value=".">dot</option>
+        </select><br>
     </div>
 
     <script src="hearsay.js"></script>
