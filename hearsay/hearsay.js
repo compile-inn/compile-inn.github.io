@@ -30,8 +30,7 @@ function getLine(corpusArray) {
 
 function getSentence() {
     let book = document.getElementById("bookSelector").value;
-    let index = getIndex(book);
-    let line = book[index];
+    let line = displayLine(book);
     return line
 }
 
