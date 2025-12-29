@@ -46,19 +46,30 @@
     </div>
     <div class="container-buttons">
         <p>
-        <button type="button" onclick="displayHearsay('myCorpus.json')">Listen hearsay</button>
-        <button type="button" onclick="displayLine('bibleVerses.json')">Read book</button>
-        <button type="button" onclick="showSettings()">Settings</button><br>
+        <button type="button" onclick="displayHearsay('./json/myCorpus.json')">Listen hearsay</button>
+        <!-- <button type="button" onclick="displayLine('bibleVerses.json')">Read book</button> -->
+        <button type="button" onclick="getSentence()">Read book</button>
+        <button type="button" onclick="showSettings()">Settings</button>
+        <button type="button" onclick="getRandomText()">Random</button><br> <!--implement function-->
         </p>
         <!-- <label for="separator" style="display: none;" >Word number:</label> -->     
         <input id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
         <!-- <label for="separator" style="display: none;" >Separator:</label> -->
-        <select name="separatorUser" id="separatorUser" style="display: none;" value=" " placeholder="separator">
+        <select name="separatorUser" id="separatorUser" style="display: none;" value=" ">
         <option value=" ">whitespace</option>
         <option value="-">hyphen</option>
         <option value="_">underbar</option>
         <option value=".">dot</option>
         </select><br>
+        <select name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
+          <option value="./json/bibleVerses.json">Bible</option>
+          <option value="./json/kingArthur.json">King Arthur</option>
+          <option value="./json/dorianGray.json">Dorian Gray</option>
+          <option value="./json/dracula.json">Dracula</option>
+          <option value="./json/vampyr.json">Vampyr</option>
+          <option value="./json/lehorla.json">Le Horla</option>
+          <option value="./json/castleOtranto.json">Castle Otranto</option>
+        </select>
         <p id="wizardQuote"></p>
     </div>
 

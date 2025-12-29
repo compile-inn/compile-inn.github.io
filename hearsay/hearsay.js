@@ -28,6 +28,13 @@ function getLine(corpusArray) {
     return line
 }
 
+function getSentence() {
+    let book = document.getElementById("bookSelector").value;
+    let index = getIndex(book);
+    let line = book[index];
+    return line
+}
+
 function displayHearsay(jsonFile) {
   getCorpus(jsonFile).then(
   function(value) {
@@ -58,9 +65,25 @@ function showSettings() {
         showStatus = 1
         document.getElementById("hearsayLenUser").style.display = "inline-block";
         document.getElementById("separatorUser").style.display = "inline-block";
+        document.getElementById("bookSelector").style.display = "inline-block";
     } else {
         showStatus = 0;
         document.getElementById("hearsayLenUser").style.display = "none";
         document.getElementById("separatorUser").style.display = "none";
+        document.getElementById("bookSelector").style.display = "none";
     };
+}
+
+function getRandomText() {
+    // to implement:
+    // selects a mode (hearsay or read)
+    // select settings depending on mode: book, length, etc.
+
+    // Get random book:
+    let bookTitlesArray = ["./json/bibleVerses.json", "./json/dorianGray.json", 
+        "./json/castleOtranto.json", "./json/dracula.json", 
+        "./json/vampyr.json", "./json/kingArthur.json"];
+    let arrayLen = bookTitlesArray.length;
+    let index = Math.floor(Math.random() * arrayLen);
+    return bookTitlesArray[index];
 }
