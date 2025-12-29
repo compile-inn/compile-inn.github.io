@@ -85,5 +85,6 @@ function getRandomText() {
         "./json/vampyr.json", "./json/kingArthur.json"];
     let arrayLen = bookTitlesArray.length;
     let index = Math.floor(Math.random() * arrayLen);
-    return bookTitlesArray[index];
+    result = bookTitlesArray[index];
+    displayLine(result);
 }
