@@ -82,6 +82,23 @@ blockquote, cite, ul {
     text-align: center;
 }
 
+.button-hearsay {
+    cursor: pointer;
+    background-color: midnightblue;
+    border: 1px solid;
+    border-color: aliceblue;
+    color: aliceblue;
+    padding: 0.25em 0.45em;
+    position: relative;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px;
+}
+
+.button-hearsay:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 2px;
+  left: 2px;
+}
+
 .ascii-art {
     width: 60%;
     max-width: 800px;
