@@ -53,15 +53,15 @@
         <button class="button-hearsay" type="button" onclick="getRandomText()">Random</button><br>
         </p>
         <!-- <label for="separator" style="display: none;" >Word number:</label> -->     
-        <input id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
+        <input class="button-hearsay" id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
         <!-- <label for="separator" style="display: none;" >Separator:</label> -->
-        <select name="separatorUser" id="separatorUser" style="display: none;" value=" ">
+        <select class="button-hearsay" name="separatorUser" id="separatorUser" style="display: none;" value=" ">
         <option value=" ">whitespace</option>
         <option value="-">hyphen</option>
         <option value="_">underbar</option>
         <option value=".">dot</option>
-        </select><br>
-        <select name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
+        </select>
+        <select class="button-hearsay" name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
           <option value="./json/bibleVerses.json">Bible</option>
           <option value="./json/kingArthur.json">King Arthur</option>
           <option value="./json/dorianGray.json">Dorian Gray</option>
