@@ -1,7 +1,31 @@
+:root {
+    --bg: midnightblue;
+    --txtColor: aliceblue;
+    --h1Color: rgb(162, 163, 161);
+    --h3Color: aliceblue;
+    --linesColor: aliceblue;
+}
+/*
+:root.light-mode {
+    --bg: burlywood ;
+    --txtColor: chocolate;
+    --h1Color: peachpuff;
+    --h3Color: chocolate;
+    --linesColor: chocolate;
+}
+*/
+:root.light-mode {
+    --bg: tan  ;
+    --txtColor: sienna;
+    --h1Color: wheat;
+    --h3Color: sienna;
+    --linesColor: sienna;
+}
+
 header {
   width: 100%;
   text-align: center;
-  border-bottom: solid aliceblue;
+  border-bottom: solid var(--linesColor);
   padding: 0px 0 5px 0px;
   margin: 0 0 50px 0;
 }
@@ -21,8 +45,8 @@ header {
 body {
     /* background-color: rgb(39, 26, 23); 
     /* background-color: rgb(2, 40, 36); */
-    background-color: midnightblue;
-    color: aliceblue;
+    background-color: var(--bg);
+    color: var(--txtColor);
     text-align: justify;
     font: 16px;
     font-family: sans-serif;
@@ -36,7 +60,7 @@ table, th, td, tr {
 }
 
 .recipe_table, tr, th, td {
-            border: 1px solid aliceblue;
+            border: 1px solid var(--txtColor);
             border-collapse: collapse;
             padding: auto;
             padding-left: 10px;
@@ -45,7 +69,7 @@ table, th, td, tr {
 }
 
 h1 {
-    color: rgb(162, 163, 161);
+    color: var(--h1Color);
     font-size: 26px;
 }
 
@@ -54,7 +78,7 @@ h2 {
 }
 
 h3 {
-    color: aliceblue;
+    color: var(--h3Color);
     font-size: 22px;
 }
 
@@ -84,10 +108,10 @@ blockquote, cite, ul {
 
 .button-hearsay {
     cursor: pointer;
-    background-color: midnightblue;
+    background-color: var(--bg);
     border: 1px solid;
-    border-color: aliceblue;
-    color: aliceblue;
+    border-color: var(--linesColor);
+    color: var(--txtColor);
     padding: 0.25em 0.45em;
     position: relative;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px;
@@ -116,10 +140,10 @@ blockquote, cite, ul {
 }
 
 div#navbar {
-    color: aliceblue;
+    color: var(--linesColor);
 }
 div#navbar a, a, a:visited {
-    color: aliceblue;
+    color: var(--linesColor);
     text-decoration: none;
     text-decoration-line: none;
 }
