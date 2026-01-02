@@ -8,5 +8,4 @@ function lightSwitch() {
         document.documentElement.classList.add('light-mode');
         sessionStorage.setItem("colorTheme", "light-mode");
     }
-
 }

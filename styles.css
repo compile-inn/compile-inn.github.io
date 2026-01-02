@@ -4,6 +4,8 @@
     --h1Color: rgb(162, 163, 161);
     --h3Color: aliceblue;
     --linesColor: aliceblue;
+    --tableTextHoverColor: midnightblue;
+    --tableCellHoverColor: aliceblue;
 }
 /*
 :root.light-mode {
@@ -20,6 +22,8 @@
     --h1Color: wheat;
     --h3Color: sienna;
     --linesColor: sienna;
+    --tableTextHoverColor: tan;
+    --tableCellHoverColor: sienna;
 }
 
 header {
@@ -53,19 +57,28 @@ body {
     line-height: 125%;
 }
 
-table, th, td, tr {
-    border-bottom-style: solid;
+.voc_table th,
+.voc_table td {
+    border: 1px solid var(--txtColor);
     border-width: 1px;
     padding: 3px;
 }
-
-.recipe_table, tr, th, td {
-            border: 1px solid var(--txtColor);
-            border-collapse: collapse;
-            padding: auto;
-            padding-left: 10px;
-            padding-right: 10px;
-            text-align: center;
+.voc_table tr:hover {
+    background-color: var(--tableCellHoverColor);
+    color: var(--tableTextHoverColor);
+}
+.recipe_table th,
+.recipe_table td {
+    background-color: var(--bg);
+    color: var(--txtColor);
+    border: 1px solid var(--txtColor);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.recipe_table,
+.voc_table {
+    border-collapse: collapse;
 }
 
 h1 {
