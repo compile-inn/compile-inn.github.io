@@ -3,7 +3,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compile-Inn > 404</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sessionColorTheme = sessionStorage.getItem("colorTheme");
     
+        if (sessionColorTheme) {
+            document.documentElement.classList.add(sessionColorTheme);
+        }});
+    </script>
 </head>
 <style>
 
