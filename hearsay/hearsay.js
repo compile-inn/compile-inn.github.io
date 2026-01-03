@@ -74,22 +74,6 @@ function showSettings() {
     };
 }
 
-function getRandomText() {
-    // to implement:
-    // selects a mode (hearsay or read)
-    // select settings depending on mode: book, length, etc.
-
-    // Get random book:
-    let bookTitlesArray = ["./json/bibleVerses.json", "./json/dorianGray.json", 
-        "./json/castleOtranto.json", "./json/dracula.json", 
-        "./json/vampyr.json", "./json/kingArthur.json"];
-    let arrayLen = bookTitlesArray.length;
-    let index = Math.floor(Math.random() * arrayLen);
-    result = bookTitlesArray[index];
-    let bookTitle = getBookTitle(index);
-    displayLine(result, bookTitle);
-}
-
 function getBookTitle(titleIndex) {
     let title = ""
     switch (titleIndex) {
@@ -111,6 +95,24 @@ function getBookTitle(titleIndex) {
         case 5:
             title = "King Arthur and the Knights of the Round Table - Sir Thomas Malory"
             break
+        case _:
+            title = "Title could not be loaded."
     }
     return title
+}
+
+function getRandomText() {
+    // to implement:
+    // selects a mode (hearsay or read)
+    // select settings depending on mode: book, length, etc.
+
+    // Get random book:
+    let bookTitlesArray = ["./json/bibleVerses.json", "./json/dorianGray.json", 
+        "./json/castleOtranto.json", "./json/dracula.json", 
+        "./json/vampyr.json", "./json/kingArthur.json"];
+    let arrayLen = bookTitlesArray.length;
+    let index = Math.floor(Math.random() * arrayLen);
+    result = bookTitlesArray[index];
+    let bookTitle = getBookTitle(index);
+    displayLine(result, bookTitle);
 }
