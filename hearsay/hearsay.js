@@ -46,11 +46,12 @@ function displayHearsay(jsonFile) {
 );
 }
 
-function displayLine(jsonFile) {
+function displayLine(jsonFile, bookTitle) {
   getCorpus(jsonFile).then(
   function(value) {
             let line = getLine(value);
             document.getElementById("wizardQuote").innerHTML = line;
+            document.getElementById("bookTitle").innerHTML = bookTitle;
   },
   function(error) {
             console.error('Error fetching corpus:', error);
@@ -85,5 +86,31 @@ function getRandomText() {
     let arrayLen = bookTitlesArray.length;
     let index = Math.floor(Math.random() * arrayLen);
     result = bookTitlesArray[index];
-    displayLine(result);
+    let bookTitle = getBookTitle(index);
+    displayLine(result, bookTitle);
+}
+
+function getBookTitle(titleIndex) {
+    let title = ""
+    switch (titleIndex) {
+        case 0:
+            title = "King James Bible"
+            break
+        case 1:
+            title = "The Portrait of Dorian Gray - Oscar Wilde"
+            break
+        case 2:
+            title = "The Castle of Otranto - Horace Walpole"
+            break
+        case 3:
+            title = "Dracula - Bram Stoker"
+            break
+        case 4:
+            title = "The Vampyre - John William Polidori"
+            break
+        case 5:
+            title = "King Arthur and the Knights of the Round Table - Sir Thomas Malory"
+            break
+    }
+    return title
 }
