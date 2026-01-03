@@ -1,7 +1,7 @@
 // This file calculates quantities on two days to prepare poolish bread.
 
 // const values are set by gram.
-const hydrometry = 0.7;
+const hydrometry = 0.65;
 const saltiness = 0.018;
 const population = 0.005
 
@@ -18,7 +18,7 @@ function getRecipePoolish() {
 
     let dryYeast = Math.ceil(flour * population)
 
-    let dryYeastDay1 = dryYeast * 0.125;
+    let dryYeastDay1 = dryYeast * 0.1;
     let dryYeastday2 = dryYeast - dryYeastDay1;
     
     let salt = Math.ceil(flour * saltiness * 10) / 10;
