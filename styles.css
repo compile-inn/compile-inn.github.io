@@ -6,6 +6,7 @@
     --linesColor: aliceblue;
     --tableTextHoverColor: midnightblue;
     --tableCellHoverColor: aliceblue;
+    --placeholderColor: aliceblue;
 }
 /*
 :root.light-mode {
@@ -24,8 +25,16 @@
     --linesColor: sienna;
     --tableTextHoverColor: tan;
     --tableCellHoverColor: sienna;
+    --placeholderColor: sienna;
+}
+::placeholder {
+    color: var(--placeholderColor);
 }
 
+html {
+    background-color: var(--bg);
+    color: var(--txtColor);
+}
 header {
   width: 100%;
   text-align: center;

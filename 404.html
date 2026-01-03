@@ -5,10 +5,10 @@
     <title>Compile-Inn > 404</title>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sessionColorTheme = sessionStorage.getItem("colorTheme");
+            const localColorTheme = localStorage.getItem("colorTheme");
     
-        if (sessionColorTheme) {
-            document.documentElement.classList.add(sessionColorTheme);
+        if (localColorTheme) {
+            document.documentElement.classList.add(localColorTheme);
         }});
     </script>
 </head>

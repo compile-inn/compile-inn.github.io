@@ -1,11 +1,11 @@
 function lightSwitch() {
-    let currentTheme = sessionStorage.getItem("colorTheme");
+    let currentTheme = localStorage.getItem("colorTheme");
 
     if (currentTheme == "light-mode") {
         document.documentElement.classList.remove('light-mode');
-        sessionStorage.setItem("colorTheme", "");
+        localStorage.setItem("colorTheme", "");
     } else {
         document.documentElement.classList.add('light-mode');
-        sessionStorage.setItem("colorTheme", "light-mode");
+        localStorage.setItem("colorTheme", "light-mode");
     }
 }

@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../styles.css">
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sessionColorTheme = sessionStorage.getItem("colorTheme");
+            const localColorTheme = localStorage.getItem("colorTheme");
     
-        if (sessionColorTheme) {
-            document.documentElement.classList.add(sessionColorTheme);
+        if (localColorTheme) {
+            document.documentElement.classList.add(localColorTheme);
         }});
     </script>
 </head>
