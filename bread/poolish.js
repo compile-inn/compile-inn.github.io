@@ -6,7 +6,6 @@ const saltiness = 0.018;
 const population = 0.005
 
 function getRecipePoolish() {
-
     let flour = document.getElementById("flourQty").value; // to be set by user.
     let water = Math.ceil(flour * hydrometry);
 

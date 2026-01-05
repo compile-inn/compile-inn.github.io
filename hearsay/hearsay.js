@@ -38,12 +38,14 @@ function displayHearsay(jsonFile) {
   getCorpus(jsonFile).then(
   function(value) {
             let hearsay = makeHearsay(value);
-            document.getElementById("bookTitle").innerHTML = ""; // deletes book title in case of previous usage.
+            document.getElementById("bookTitle").style.display = "none";
             document.getElementById("wizardQuote").innerHTML = hearsay;
   },
   function(error) {
             console.error('Error fetching corpus:', error);
-            document.getElementById("wizardQuote").innerHTML = "Error loading text";}
+            document.getElementById("wizardQuote").innerHTML = "Error loading text";
+            document.getElementById("bookTitle").innerHTML = "Error loading title";
+         }
 );
 }
 
@@ -103,11 +105,6 @@ function getBookTitle(titleIndex) {
 }
 
 function getRandomText() {
-    // to implement:
-    // selects a mode (hearsay or read)
-    // select settings depending on mode: book, length, etc.
-
-    // Get random book:
     let bookTitlesArray = ["./json/bibleVerses.json", "./json/dorianGray.json", 
         "./json/castleOtranto.json", "./json/dracula.json", 
         "./json/vampyr.json", "./json/kingArthur.json"];

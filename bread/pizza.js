@@ -7,7 +7,6 @@ const population = 0.005
 
 
 function getRecipePizza() {
-
     let flour = document.getElementById("flourQty").value; // to be set by user.
     let water = Math.ceil(flour * hydrometry);
     let salt = Math.ceil(flour * saltiness * 10) / 10;

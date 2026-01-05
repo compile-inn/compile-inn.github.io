@@ -55,20 +55,20 @@
     <div class="container-buttons">
         <p>
         <button class="button-hearsay" type="button" onclick="displayHearsay('./json/myCorpus.json')">Listen hearsay</button>
-        <!-- <button type="button" onclick="displayLine('bibleVerses.json')">Read book</button> -->
         <button class="button-hearsay" type="button" onclick="getSentence()">Read book</button>
         <button class="button-hearsay" type="button" onclick="showSettings()">Settings</button>
         <button class="button-hearsay" type="button" onclick="getRandomText()">Random</button><br>
         </p>
-        <!-- <label for="separator" style="display: none;" >Word number:</label> -->     
+    
         <input class="button-hearsay" id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
-        <!-- <label for="separator" style="display: none;" >Separator:</label> -->
+        
         <select class="button-hearsay" name="separatorUser" id="separatorUser" style="display: none;" value=" ">
         <option value=" ">whitespace</option>
         <option value="-">hyphen</option>
         <option value="_">underbar</option>
         <option value=".">dot</option>
         </select>
+
         <select class="button-hearsay" name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
           <option value="./json/bibleVerses.json">Bible</option>
           <option value="./json/kingArthur.json">King Arthur</option>
@@ -78,8 +78,9 @@
           <option value="./json/lehorla.json">Le Horla</option>
           <option value="./json/castleOtranto.json">Castle Otranto</option>
         </select>
+
         <p id="wizardQuote"></p>
-        <cite id="bookTitle"></cite>
+        <cite id="bookTitle" style="display: inline-block;"></cite>
     </div>
     <script src="../lightSwitch.js"></script>
     <script src="hearsay.js"></script>
