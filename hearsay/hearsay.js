@@ -54,6 +54,7 @@ function displayLine(jsonFile, bookTitle) {
   function(value) {
             let line = getLine(value);
             document.getElementById("wizardQuote").innerHTML = line;
+            document.getElementById("bookTitle").style.display = "inline-block";
             document.getElementById("bookTitle").innerHTML = bookTitle;
   },
   function(error) {
