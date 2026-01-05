@@ -38,6 +38,7 @@ function displayHearsay(jsonFile) {
   getCorpus(jsonFile).then(
   function(value) {
             let hearsay = makeHearsay(value);
+            document.getElementById("bookTitle").innerHTML = ""; // deletes book title in case of previous usage.
             document.getElementById("wizardQuote").innerHTML = hearsay;
   },
   function(error) {
