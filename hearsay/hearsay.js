@@ -115,3 +115,16 @@ function getRandomText() {
     let bookTitle = getBookTitle(index);
     displayLine(result, bookTitle);
 }
+
+// Any non-default value for opt will hide the html element attached to elementId.
+function htmlElementSwitch(elementId, opt = "default") {
+    let displayStatus = elementId.style.display;
+    if (opt == "default") {
+        if (displayStatus == "none") {
+        document.getElementById(elementId).style.display = "inline-block";
+        } else {
+        document.getElementById(elementId).style.display = "none";}
+    } else {
+        document.getElementById(elementId).style.display = "none";
+    }
+}
