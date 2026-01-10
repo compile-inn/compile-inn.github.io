@@ -68,15 +68,15 @@
         <option value="_">underbar</option>
         <option value=".">dot</option>
         </select>
-
+       <!-- what is value="bibleVerses.json" again? Is it needed now?-->
         <select class="button-hearsay" name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
           <option value="random">Random</option>
-          <option value="./json/bibleVerses.json">Bible</option>
-          <option value="./json/kingArthur.json">King Arthur</option>
-          <option value="./json/dorianGray.json">Dorian Gray</option>
-          <option value="./json/dracula.json">Dracula</option>
-          <option value="./json/vampyr.json">Vampyr</option>
-          <option value="./json/castleOtranto.json">Castle Otranto</option>
+          <option value='["./json/bibleVerses.json", "King James Bible"]'>Bible</option>
+          <option value='["./json/kingArthur.json", "King Arthur and the Knights of the Round Table - Sir Thomas Malory"]'>King Arthur</option>
+          <option value='["./json/dorianGray.json", "The Portrait of Dorian Gray - Oscar Wilde"]'>Dorian Gray</option>
+          <option value='["./json/dracula.json", "Dracula - Bram Stoker"]'>Dracula</option>
+          <option value='["./json/vampyr.json", "The Vampyre - John William Polidori"]'>Vampyr</option>
+          <option value='["./json/castleOtranto.json", "The Castle of Otranto - Horace Walpole"]'>Castle Otranto</option>
         </select>
 
         <p id="wizardQuote"></p>

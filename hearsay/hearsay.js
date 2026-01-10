@@ -34,9 +34,21 @@ function getSentence() {
         let line = getRandomText();
         return line
     } else {
-        let line = displayLine(book);
-        return line
+        let pathAndTitle = getBookPathAndTitle(book);
+        let bookPath = pathAndTitle[0];
+        let title = pathAndTitle[1];
+        let quote = displayLine(bookPath, title);
+        return quote
     }
+}
+
+// get path and title of the user-selected book.
+function getBookPathAndTitle(selectedBookOpt) {
+    arr = JSON.parse(selectedBookOpt);
+    let bookPath = arr[0];
+    let bookTitle = arr[1];
+    let quoteInfo = [bookPath, bookTitle] 
+    return quoteInfo
 }
 
 function displayHearsay(jsonFile) {
@@ -83,42 +95,32 @@ function showSettings() {
     };
 }
 
-function getBookTitle(titleIndex) {
-    let title = ""
-    switch (titleIndex) {
-        case 0:
-            title = "King James Bible"
-            break
-        case 1:
-            title = "The Portrait of Dorian Gray - Oscar Wilde"
-            break
-        case 2:
-            title = "The Castle of Otranto - Horace Walpole"
-            break
-        case 3:
-            title = "Dracula - Bram Stoker"
-            break
-        case 4:
-            title = "The Vampyre - John William Polidori"
-            break
-        case 5:
-            title = "King Arthur and the Knights of the Round Table - Sir Thomas Malory"
-            break
-        case _:
-            title = "Title could not be loaded."
-    }
-    return title
-}
+// maybe the book title could be inserted directly in the corpus json...
 
+// get ranbom book and its title.
 function getRandomText() {
-    let bookTitlesArray = ["./json/bibleVerses.json", "./json/dorianGray.json", 
-        "./json/castleOtranto.json", "./json/dracula.json", 
-        "./json/vampyr.json", "./json/kingArthur.json"];
-    let arrayLen = bookTitlesArray.length;
+    const bookshelfArray = {
+        "books" : [
+        {"path" : "./json/bibleVerses.json",
+         "title" : "King James Bible"},
+        {"path" : "./json/dorianGray.json",
+         "title" : "The Portrait of Dorian Gray - Oscar Wilde"},
+        {"path" : "./json/dracula.json",
+         "title" : "Dracula - Bram Stoker"}, 
+        {"path" : "./json/vampyr.json",
+         "title" : "The Vampyre - John William Polidori"}, 
+        {"path" : "./json/castleOtranto.json",
+         "title" : "The Castle of Otranto - Horace Walpole"},
+        {"path" : "./json/kingArthur.json",
+         "title" : "King Arthur and the Knights of the Round Table - Sir Thomas Malory"},  ]
+        }
+    
+    let arrayLen = bookshelfArray.books.length;
     let index = Math.floor(Math.random() * arrayLen);
-    result = bookTitlesArray[index];
-    let bookTitle = getBookTitle(index);
-    displayLine(result, bookTitle);
+    let book = bookshelfArray.books[index];
+    let bookPath = book.path;
+    let bookTitle = book.title;
+    displayLine(bookPath, bookTitle);
 }
 
 // Any non-default value for opt will hide the html element attached to elementId.
