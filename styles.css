@@ -161,6 +161,33 @@ blockquote, cite, ul {
     text-align: center;
 }
 
+.ascii-art-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.ascii-art-container pre {
+    width: max-content; /* Ensure pre fills the container */
+    white-space: none; /* Allow wrapping if absolutely necessary */
+    word-wrap: break-word; /* Fallback for older browsers */
+    font-family: 'Courier New', Courier, monospace; /* Crisp monospace font */
+    line-height: 1; /* Tight line spacing */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    font-size: 12px; /* Adjust based on your specific ASCII art */
+    overflow: hidden; /* Horizontal scroll if content is too wide */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .ascii-art-container pre {
+        font-size: 10px; /* Smaller font on mobile */
+    }
+}
+
+
 div#navbar {
     color: var(--linesColor);
 }

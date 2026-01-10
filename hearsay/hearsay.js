@@ -30,8 +30,13 @@ function getLine(corpusArray) {
 
 function getSentence() {
     let book = document.getElementById("bookSelector").value;
-    let line = displayLine(book);
-    return line
+    if (book == "random") {
+        let line = getRandomText();
+        return line
+    } else {
+        let line = displayLine(book);
+        return line
+    }
 }
 
 function displayHearsay(jsonFile) {

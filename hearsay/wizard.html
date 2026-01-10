@@ -57,7 +57,7 @@
         <button class="button-hearsay" type="button" onclick="displayHearsay('./json/myCorpus.json')">Listen hearsay</button>
         <button class="button-hearsay" type="button" onclick="getSentence()">Read book</button>
         <button class="button-hearsay" type="button" onclick="showSettings()">Settings</button>
-        <button class="button-hearsay" type="button" onclick="getRandomText()">Random</button><br>
+        <!-- <button class="button-hearsay" type="button" onclick="getRandomText()">Random</button><br> -->
         </p>
     
         <input class="button-hearsay" id="hearsayLenUser" style="display: none; width: 90px" type="number" placeholder="number of words" value="4">
@@ -70,6 +70,7 @@
         </select>
 
         <select class="button-hearsay" name="bookSelector" id="bookSelector" style="display: none;" value="bibleVerses.json">
+          <option value="random">Random</option>
           <option value="./json/bibleVerses.json">Bible</option>
           <option value="./json/kingArthur.json">King Arthur</option>
           <option value="./json/dorianGray.json">Dorian Gray</option>
