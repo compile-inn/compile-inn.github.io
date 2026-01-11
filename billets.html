@@ -6,12 +6,12 @@
     <title>Compile-Inn > billets</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        (function() {
             const localColorTheme = localStorage.getItem("colorTheme");
-    
-        if (localColorTheme) {
-            document.documentElement.classList.add(localColorTheme);
-        }});
+            if (localColorTheme) {
+                document.documentElement.classList.add(localColorTheme);
+            }
+        })();
     </script>
 </head>
 
