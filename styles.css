@@ -27,6 +27,18 @@
     --tableCellHoverColor: sienna;
     --placeholderColor: sienna;
 }
+
+:root.console-mode {
+    --bg: rgb(0, 36, 0)  ;
+    --txtColor: rgba(129, 250, 0, 0.653);
+    --h1Color: chartreuse;
+    --h3Color: chartreuse;
+    --linesColor: chartreuse;
+    --tableTextHoverColor: chartreuse;
+    --tableCellHoverColor: chartreuse;
+    --placeholderColor: chartreuse;
+}
+
 ::placeholder {
     color: var(--placeholderColor);
 }
