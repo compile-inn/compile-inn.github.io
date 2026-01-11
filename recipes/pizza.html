@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Compile-Inn > Simple Bread</title>
+    <title>Compile-Inn > Pizza Dough</title>
     <link rel="stylesheet" href="../styles.css">
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -19,15 +19,16 @@
     <header>
         <div id="navbar" class="container">
           ▒
-          <a href="../index.html">Home</a> / <a href="../recipes.html">Recipes</a>
-          / Simple Bread
+          <a href="../index.html">Home</a> / <a href="index.html">Recipes</a>
+          / Pizza Dough
         </div>
     </header>
 
-    <div class=container> 
-        <h1>Bread Dough Calculator</h1>
+    <div class=container>
+        <h1>Pizza Dough Calculator</h1>
+
         <input class="button-hearsay" id="flourQty" type="number" placeholder="flour in grams">
-        <button class="button-hearsay" type="button" onclick="getRecipeSimple()">Calculate!</button>
+        <button class="button-hearsay" type="button" onclick="getRecipePizza()">Calculate!</button>   
         <p>
             <table class="recipe_table">
                 <tr>
@@ -41,7 +42,6 @@
                 <tr>
                     <td>Water</td>
                     <td><span id ="water"></span></td>
-
                 </tr>
                 <tr>
                     <td>Salt</td>
@@ -51,10 +51,14 @@
                     <td>Dry yeast</td>
                     <td><span id ="yeast"></span></td>
                 </tr>
+                        <tr>
+                    <td>Olive Oil</td>
+                    <td><span id ="oliveOil"></span></td>
+                </tr>
             </table>
         </p>
     </div>
 
+    <script src ="pizza.js"></script>
     <script src="../lightSwitch.js"></script>
-    <script src ="simplebread.js"></script>
 </body>

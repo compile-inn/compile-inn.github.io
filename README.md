@@ -7,5 +7,6 @@ Along the way on the Internet, I found some wonderful personal websites, full of
 Maybe more bread calculators, maybe a JavaScript version of my drunk wizard hearsay generator to echo the one in my Dragon Arm Keep passwords play-app, I made a long time ago. 
 
 To add:
-* selector for JSON texts.
+* password generator to go with the hearsay one
+* more corpuses for fun
 * logorrhea with something like setInterval(getHearsay, 1000);
