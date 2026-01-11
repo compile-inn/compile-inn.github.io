@@ -8,13 +8,13 @@ function lightSwitch() {
             localStorage.setItem("colorTheme", "light-mode");
             break;
         case "light-mode":
-            document.documentElement.classList.remove('light-mode');
+            document.documentElement.classList.add('console-mode');
             localStorage.setItem("colorTheme", "console-mode");
             break;
         case "console-mode":
-            document.documentElement.classList.remove('console-mode');
+            localStorage.removeItem("colorTheme");
             break;
         default:
-            console.log("Theme could not be loaded.")
+            console.log("Color theme could not be loaded.")
     }
 }
