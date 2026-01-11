@@ -4,6 +4,7 @@ function lightSwitch() {
         case "":
             document.documentElement.classList.add('light-mode');
             localStorage.setItem("colorTheme", "light-mode");
+            break;
         case "light-mode":
             document.documentElement.classList.remove('light-mode');
             localStorage.setItem("colorTheme", "console-mode");
