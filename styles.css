@@ -29,7 +29,7 @@
 }
 
 :root.console-mode {
-    --bg: rgb(0, 25, 0)  ;
+    --bg: rgb(0, 20, 0)  ;
     --txtColor: rgba(129, 250, 0, 0.653);
     --h1Color: chartreuse;
     --h3Color: chartreuse;
