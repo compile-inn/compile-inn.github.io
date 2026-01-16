@@ -11,7 +11,7 @@ function addChar(index) {
     document.getElementById("typedText").innerHTML += text[index];
 }
 function fridayNightHackySolution() {
-
+    console.log("I was called!")
 }
 function typeText() {
     let counter = 0;
