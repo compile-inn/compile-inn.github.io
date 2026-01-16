@@ -15,7 +15,7 @@ function fridayNightHackySolution() {
 }
 function typeText() {
     let counter = 0;
-    let pauseLength = Math.random * 1000;
+    let pauseLength = Math.random * 100000;
     while (counter < textLength) {
         addChar(counter);
         counter += 1;
