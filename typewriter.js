@@ -10,12 +10,15 @@ let textLength = text.length;
 function addChar(index) {
     document.getElementById("typedText").innerHTML += text[index];
 }
+function fridayNightHackySolution() {
 
+}
 function typeText() {
     let counter = 0;
     let pauseLength = Math.random * 1000;
     while (counter < textLength) {
-        setInterval(addChar(counter), pauseLength);
+        addChar(counter);
         counter += 1;
+        setTimeout(fridayNightHackySolution(), pauseLength)
     }
 }
