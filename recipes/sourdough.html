@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compile-Inn > Simple Bread</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const localColorTheme = localStorage.getItem("colorTheme");
+    
+        if (localColorTheme) {
+            document.documentElement.classList.add(localColorTheme);
+        }});
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="container">
+          ▒
+          <a href="../index.html">Home</a> / <a href="index.html">Recipes</a>
+          / Sourdough
+        </div>
+    </header>
+
+    <div class=container> 
+        <h1>Bread Dough Calculator</h1>
+        <input class="button-hearsay" id="flourQty" type="number" placeholder="flour in grams">
+        <button class="button-hearsay" type="button" onclick="getSourDoughRecipe()">Calculate!</button>
+        <p>
+            <table class="recipe_table">
+                <tr>
+                    <th>Ing</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Flour</td>
+                    <td><span id ="flour"></span></td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td><span id ="water"></span></td>
+
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td><span id ="salt"></span></td>
+                </tr>
+                <tr>
+                    <td>Sour Dough</td>
+                    <td><span id ="sourDough"></span></td>
+                </tr>
+            </table>
+        </p>
+        <p>This recipe uses a liquid sourdough (100% of hydration).</p>
+    </div>
+
+    <script src="../lightSwitch.js"></script>
+    <script src ="sourdough.js"></script>
+</body>
