@@ -12,7 +12,7 @@ function getSourDoughRecipe() {
     let flourInSourDough = sourDough * (1 - sourDoughHydration);
     let waterInSourDough = sourDough * sourDoughHydration;
     let totalFlour = flour + flourInSourDough;
-    let water = Math.ceil(totalFlour * hydrometry - waterInSourDough);
+    let water = Math.ceil(totalFlour * hydration - waterInSourDough);
     let salt = Math.ceil(totalFlour * saltiness * 10) / 10;
     
     document.getElementById("flour").innerHTML = flour + " g";
