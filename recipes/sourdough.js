@@ -14,9 +14,20 @@ function getSourDoughRecipe() {
     let totalFlour = flour + flourInSourDough;
     let water = Math.ceil(totalFlour * hydration - waterInSourDough);
     let salt = Math.ceil(totalFlour * saltiness * 10) / 10;
+
+    let customSourDoughQty = document.getElementById("sourDoughQty").value;
+    if (customSourDoughQty != "") {
+        sourDough = customSourDoughQty;
+        flourInSourDough = sourDough * (1 - sourDoughHydration);
+        waterInSourDough = sourDough * sourDoughHydration;
+        totalFlour = flour + flourInSourDough;
+        water = Math.ceil(totalFlour * hydration - waterInSourDough);
+        salt = Math.ceil(totalFlour * saltiness * 10) / 10;
+    }
     
     document.getElementById("flour").innerHTML = flour + " g";
     document.getElementById("water").innerHTML = water + " g";
     document.getElementById("salt").innerHTML = salt + " g";
     document.getElementById("sourDough").innerHTML = sourDough + " g";
+    console.log(document.getElementById("sourDoughQty").value);
 }

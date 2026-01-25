@@ -27,6 +27,7 @@
     <div class=container> 
         <h1>Bread Dough Calculator</h1>
         <input class="button-hearsay" id="flourQty" type="number" placeholder="flour in grams">
+        <input class="button-hearsay" id="sourDoughQty" type="number" placeholder="sourdough in grams">
         <button class="button-hearsay" type="button" onclick="getSourDoughRecipe()">Calculate!</button>
         <p>
             <table class="recipe_table">
@@ -53,7 +54,9 @@
                 </tr>
             </table>
         </p>
-        <p>This recipe uses a liquid sourdough (100% of hydration).</p>
+        <p>This recipe uses a liquid sourdough (100% of hydration).
+           The default sourdough quantity is 25% of the flour weight,
+           but a custom quantity can be added in grams.</p>
     </div>
 
     <script src="../lightSwitch.js"></script>
