@@ -1,24 +1,19 @@
+let text = "You seem lost, but in the distance you see a keep. Maybe you should head there, get a drink and listen to a hearsay or two.";
+const textLength = text.length;
+let counter = 0;
 
-// a cursor: block element that blinks over the last letter? 
-// Or simpler, the last letter background and color are reversed (no need to implement blinking.)
+const typedMessage = setInterval(addChar, 200);
 
-
-let text = "How these papers have been placed in sequence will be made manifest in the reading of them.";
-let textLength = text.length;
-
-// Concatenates a character to the target HTML element
-function addChar(index) {
-    document.getElementById("typedText").innerHTML += text[index];
-}
-function fridayNightHackySolution() {
-    console.log("I was called!")
-}
-function typeText() {
-    let counter = 0;
-    let pauseLength = Math.random * 1000000;
-    while (counter < textLength) {
-        addChar(counter);
+function addChar() {
+    if (counter < textLength) {
+        document.getElementById("typedText").innerHTML += text[counter];
         counter += 1;
-        setTimeout(fridayNightHackySolution(), pauseLength)
+        console.log("As usual, nothing works.");
+    } else {
+        stopTyping();
     }
+}
+
+function stopTyping() {
+    clearInterval(typedMessage);
 }
