@@ -1,5 +1,5 @@
 :root {
-    --bg: midnightblue;
+    --bg: rgb(5, 5, 23); /* midnightblue */
     --txtColor: aliceblue;
     --h1Color: rgb(162, 163, 161);
     --h3Color: aliceblue;
