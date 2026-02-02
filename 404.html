@@ -47,22 +47,26 @@ h3 {
 
 p {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 pre {
     font-size: 1.2vw;
-}
-
-blockquote, cite, ul {
-    font-size: 16px;
 }
 .container {
     width: 90%;
     max-width: 800px;
     margin: auto;
 }
-
+.typedTextContainer {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.typedTextContainer p {
+    margin: 0;
+}
 .ascii-art {
     width: 60%;
     max-width: 800px;
@@ -71,6 +75,11 @@ blockquote, cite, ul {
     font-family: monospace;
 }
 
+#cursor {
+  opacity: 0.5;
+  display: inline;
+  margin: 0;
+}
 div#navbar {
     color: aliceblue;
 }
@@ -119,9 +128,12 @@ div#navbar a:hover, a:hover {
                   
         </pre>
     </div>
-    <div class="container">    
-        <p id="typedText"></p>
+    <div class="typedTextContainer">  
+        <p>  
+            <span id="typedText"></span><span id="cursor">▌</span>
+        </p>
     </div>
+    
 <script src="lightSwitch.js"></script>
 <script src="typewriter.js"></script>
 </body>
