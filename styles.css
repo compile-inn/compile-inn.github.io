@@ -1,11 +1,11 @@
 :root {
     --bg: rgb(5, 5, 23); /* midnightblue */
-    --txtColor: aliceblue;
+    --txtColor: rgb(240, 248, 255);
     --h1Color: rgb(162, 163, 161);
     --h3Color: aliceblue;
     --linesColor: aliceblue;
     --tableTextHoverColor: midnightblue;
-    --tableCellHoverColor: aliceblue;
+    --tableCellHoverColor: rgb(240, 248, 255);
     --placeholderColor: aliceblue;
 }
 /*
@@ -78,6 +78,14 @@ body {
     line-height: 125%;
 }
 
+canvas {
+    background-color: var(--bg);
+    text-align: center;
+    width: 100%;  /* Fill the width of the container */
+    height: 100%; /* Fill the height of the container */
+    display: block; /* Prevents extra space below the canvas */
+}
+
 .voc_table th,
 .voc_table td {
     border: 1px solid var(--txtColor);
@@ -132,6 +140,12 @@ blockquote, cite, ul {
     width: 90%;
     max-width: 800px;
     margin: auto;
+}
+.container-trees {
+    width: auto;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 .container-buttons {
     width: 90%;

@@ -1,6 +1,15 @@
-function lightSwitch() {
+import { ohMyTrees  } from "./fractalTree.js";
+
+export function lightSwitch() {
     let currentTheme = localStorage.getItem("colorTheme");
     document.documentElement.classList.remove('light-mode', 'console-mode');
+ 
+    // Reload home page to update fractal trees color to theme selection (no modules).
+    // Works but with small delay
+
+    //let ctx = getContext();
+    //ctx.reset();
+    //window.location.reload();
 
     switch (currentTheme) {
         case null:
@@ -17,4 +26,7 @@ function lightSwitch() {
         default:
             console.log("Color theme could not be loaded.")
     }
+   ohMyTrees();
 }
+// Make function available globally
+window.lightSwitch = lightSwitch;
