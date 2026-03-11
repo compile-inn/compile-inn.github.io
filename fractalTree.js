@@ -16,7 +16,7 @@ canvas.height = window.innerHeight * 0.4; // 70% of viewport height
 // tree parameters
 const xA = canvas.width / 2;
 const yA = canvas.height - 60;
-const trunkLength = 70;
+const trunkLength = canvas.height / 5;  //70
 const trunkAngle = Math.PI / 2; // value in radians (PI = 180º so, PI/2 = 90 degrees)
 const branchAngle = Math.PI / 6; // value in radians (30 degrees)
 const treeMaxDepth = 10;
@@ -100,18 +100,18 @@ ctx.strokeStyle = treeColor;
 // the little forest parameters
 const xA1 = canvas.width / 2.7;
 const yA1 = canvas.height - 90;
-const trunkLength1 = 40;
+const trunkLength1 = trunkLength * 0.8; // 40
 
 const xA2 = canvas.width / 1.5;
 const yA2 = canvas.height - 130;
 
 const xA3 = canvas.width / 3.5;
 const yA3 = canvas.height - 140;
-const trunkLength3 = 30;
+const trunkLength3 = trunkLength * 0.7; // 30
 
 const xA4 = canvas.width / 1.3;
 const yA4 = canvas.height - 130;
-const trunkLength4 = 20;
+const trunkLength4 = trunkLength * 0.6; //20
 
 export function ohMyTrees() {
     const treeColor = getComputedStyle(r).getPropertyValue("--txtColor");
