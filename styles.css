@@ -150,7 +150,8 @@ blockquote, cite, ul {
 }
 @media (max-width: 768px) {
     .container-trees {
-        height: 20vh;  /* Smaller on phones */
+        max-width: 90%;
+        height: 15vh;  /* Smaller on phones */
     }
 }
 
