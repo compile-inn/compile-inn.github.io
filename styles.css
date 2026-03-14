@@ -146,7 +146,15 @@ blockquote, cite, ul {
     max-width: 800px;
     margin: auto;
     text-align: center;
+    /*border: 1px solid #ccc;*/
 }
+@media (max-width: 768px) {
+    .container-trees {
+        height: 20vh;  /* Smaller on phones */
+    }
+}
+
+
 .container-buttons {
     width: 90%;
     max-width: 800px;
