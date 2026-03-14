@@ -9,9 +9,11 @@ function getContext() {
     return ctx
 }
 
+// solves the pixel ratio issue when displayed on smartphones.
+const dpr = window.devicePixelRatio || 1;
 // set canvas area
-canvas.width = window.innerWidth * 0.7; // 80% of viewport width
-canvas.height = window.innerHeight * 0.4; // 70% of viewport height
+canvas.width = window.innerWidth * 0.7 * dpr; // 80% of viewport width
+canvas.height = window.innerHeight * 0.4 * dpr; // 70% of viewport height
 
 // tree parameters
 const xA = canvas.width / 2;
