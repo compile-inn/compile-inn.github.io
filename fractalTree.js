@@ -20,7 +20,7 @@ const xA = canvas.width / 2;
 const yA = canvas.height - (canvas.height * 0.1); // 90
 const trunkLength = canvas.height / 5;  //70
 const trunkAngle = Math.PI / 2; // value in radians (PI = 180º so, PI/2 = 90 degrees)
-const branchAngle = Math.PI / 6; // value in radians (30 degrees)
+const branchAngle = Math.PI / 7; // value in radians (30 degrees) : value was 6
 const treeMaxDepth = 10;
 
 // Get current theme text color.
