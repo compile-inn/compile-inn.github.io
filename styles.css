@@ -1,5 +1,5 @@
 :root {
-    --bg: rgb(5, 5, 23); /* midnightblue */
+    --bg: rgb(5, 5, 23); /* was midnightblue */
     --txtColor: rgb(240, 248, 255);
     --h1Color: rgb(162, 163, 161);
     --h3Color: aliceblue;
@@ -8,15 +8,6 @@
     --tableCellHoverColor: rgb(240, 248, 255);
     --placeholderColor: aliceblue;
 }
-/*
-:root.light-mode {
-    --bg: burlywood ;
-    --txtColor: chocolate;
-    --h1Color: peachpuff;
-    --h3Color: chocolate;
-    --linesColor: chocolate;
-}
-*/
 :root.light-mode {
     --bg: tan  ;
     --txtColor: sienna;
@@ -54,27 +45,31 @@ header {
   padding: 0px 0 5px 0px;
   margin: 0 0 50px 0;
 }
+@font-face {
+  font-family: oldDaysIBM; /* set name */
+  src: url(./fonts/Ac437_IBM_VGA_8x16.ttf);
+}
 
 header h1 {
+    font-family: oldDaysIBM;
     font-size: 40px;
 }
 
 header h2 {
+    font-family: oldDaysIBM;
     font-size: 24px;
 }
 
 header {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
-    /* background-color: rgb(39, 26, 23); 
-    /* background-color: rgb(2, 40, 36); */
     background-color: var(--bg);
     color: var(--txtColor);
     text-align: justify;
-    font: 16px;
-    font-family: sans-serif;
+    font: 20px;
+    font-family: OlddaysIBM, sans-serif;
     line-height: 125%;
 }
 
@@ -124,15 +119,12 @@ h3 {
     font-size: 22px;
 }
 
-p {
-    font-size: 16px;
-}
-
 pre {
     font-size: 1.2vw;
 }
 
 blockquote, cite, ul {
+    font-family: OlddaysIBM, sans-serif;
     font-size: 16px;
 }
 
@@ -154,16 +146,17 @@ blockquote, cite, ul {
         height: 25vh;  /* Smaller on phones */
     }
 }
-
-
 .container-buttons {
     width: 90%;
     max-width: 800px;
     margin: auto;
     text-align: center;
 }
-
-.button-hearsay {
+.bloquepate {
+    display: none;
+}
+.pixelButton {
+    font-family: OlddaysIBM, sans-serif;
     cursor: pointer;
     background-color: var(--bg);
     border: 1px solid;
@@ -174,7 +167,7 @@ blockquote, cite, ul {
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 2px 2px 0px 0px, 1px 1px 0px 0px, 2px 2px 0px 0px;
 }
 
-.button-hearsay:active {
+.pixelButton:active {
   box-shadow: 0px 0px 0px 0px;
   top: 2px;
   left: 2px;
