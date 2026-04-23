@@ -27,8 +27,12 @@
     <div class=container>
         <h1>Pizza Dough Calculator</h1>
 
-        <input class="pixelButton" id="flourQty" type="number" placeholder="flour in grams">
-        <button class="pixelButton" type="button" onclick="getRecipePizza()">Calculate!</button>   
+        <input class="pixelButton" id="flourQty" type="number" placeholder="flour in grams"><br>
+        <input class="pixelButton" id="numberOfPizza" type="number" placeholder="number of pizza"><br>
+        <input class="pixelButton" id="pizzaDiameter" type="number" placeholder="diameter in cm">
+        <br><br>
+        <button class="pixelButton" type="button" onclick="getRecipePizza()">Calculate!</button>
+        
         <p>
             <table class="recipe_table">
                 <tr>
@@ -51,14 +55,23 @@
                     <td>Dry yeast</td>
                     <td><span id ="yeast"></span></td>
                 </tr>
-                        <tr>
+                <tr>
                     <td>Olive Oil</td>
                     <td><span id ="oliveOil"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Weight</td>
+                    <td><span id ="total"></span></td>
+                </tr>
+                <tr>
+                    <td>By Pizza</td>
+                    <td><span id ="weightByPizza"></span></td>
                 </tr>
             </table>
         </p>
     </div>
 
     <script src ="pizza.js"></script>
-    <script src="../lightSwitch.js"></script>
+
+    <!--<script type="module" src="../main.js"></script> -->
 </body>
