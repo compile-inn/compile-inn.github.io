@@ -7,33 +7,27 @@ const population = 0.005
 const weightByCm = 11.5;
 
 function getRecipePizza() {
-    var numberOfPizza = document.getElementById("numberOfPizza").value;
-    var pizzaDiameter = document.getElementById("pizzaDiameter").value;
+    var numberOfPizza = document.getElementById("numberOfPizza").valueAsNumber;
+    var pizzaDiameter = document.getElementById("pizzaDiameter").valueAsNumber;
     var flour = document.getElementById("flourQty").valueAsNumber; // to be set by user.
     var doughWeight;
     var water;
 
-    if (numberOfPizza !== "" && pizzaDiameter !== "") {
+    if (!(Number.isNaN(numberOfPizza)) && !(Number.isNaN(pizzaDiameter))) {
         doughWeight = numberOfPizza * pizzaDiameter * weightByCm;
         flour = Math.ceil(doughWeight / (1 + hydrometry));
         water = Math.ceil(flour * hydrometry);
         document.getElementById("flour").innerHTML = flour + " g";
         document.getElementById("water").innerHTML = water + " g";
-        console.log("numberofpizza is " + numberOfPizza);
-        console.log("pizzadiameter is " + pizzaDiameter);
-        console.log("if");
     } else {
         water = Math.ceil(flour * hydrometry);
-        console.log("else");
     };
 
     var salt = Math.ceil(flour * saltiness * 10) / 10;
     var dryYeast = Math.ceil(flour * population);
     var oliveOil = Math.ceil(flour * 0.03 * 10) / 10; // 3 percent of the flour weight
     var total = Math.floor(flour + water + salt + dryYeast + oliveOil);
-    var weightByPizza = (numberOfPizza != "") ? Math.ceil(total / numberOfPizza) : NaN;
-
-    console.log("flour is " + flour);
+    var weightByPizza = (numberOfPizza === NaN || numberOfPizza <= 0) ? NaN : Math.ceil(total / numberOfPizza);
     
     document.getElementById("flour").innerHTML = flour + " g";
     document.getElementById("water").innerHTML = water + " g";
@@ -42,7 +36,7 @@ function getRecipePizza() {
     document.getElementById("oliveOil").innerHTML = oliveOil + " g";
 
     document.getElementById("total").innerHTML = total + " g";
-    document.getElementById("weightByPizza").innerHTML = (weightByPizza != "") ? weightByPizza + " g" : "";
+    document.getElementById("weightByPizza").innerHTML = (Number.isNaN(weightByPizza)) ? "" : (weightByPizza + " g");
 }
 
 //Flour = Dough weight / (100% of flour + 70% of water)
