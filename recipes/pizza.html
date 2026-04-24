@@ -27,9 +27,9 @@
     <div class=container>
         <h1>Pizza Dough Calculator</h1>
 
-        <input class="pixelButton" id="flourQty" type="number" placeholder="flour in grams"><br>
-        <input class="pixelButton" id="numberOfPizza" type="number" placeholder="number of pizza"><br>
-        <input class="pixelButton" id="pizzaDiameter" type="number" placeholder="diameter in cm">
+        <input class="pixelButton" id="flourQty" type="number" min="1" placeholder="flour in grams"><br>
+        <input class="pixelButton" id="numberOfPizza" min="1" type="number" placeholder="number of pizza"><br>
+        <input class="pixelButton" id="pizzaDiameter" min="1" type="number" placeholder="diameter in cm">
         <br><br>
         <button class="pixelButton" type="button" onclick="getRecipePizza()">Calculate!</button>
         
