@@ -43,8 +43,7 @@ function getRecipePizza() {
 //Water = flour * water percentage 
 
 // Make dough recipe from number of pizza and their diameter.
-// let numberOfPizza = document.getElementById("numberOfPizza").value;
-// let pizzaDiameter = document.getElementById("pizzaDiameter").value;
+
 // let doughWeight = numberOfPizza * pizzaDiameter * 11.5;
 // let flour2 = doughWeight / 1.7; // for 70% hydrometry
 // let water2 = flour2 * 0.7;
